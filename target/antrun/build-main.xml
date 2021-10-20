@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo message="*******************install*******************"/>
+  <mkdir dir="H:\程序\大三上期\使用迭代器遍历Collection集合元素/target/classes"/>
+  <copy todir="H:\程序\大三上期\使用迭代器遍历Collection集合元素\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大三上期\使用迭代器遍历Collection集合元素\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大三上期\使用迭代器遍历Collection集合元素\target/classes/使用迭代器遍历Collection集合元素.jar" tofile="H:\程序\大三上期\使用迭代器遍历Collection集合元素\target/使用迭代器遍历Collection集合元素_hide.jar"/>
+  <copy todir="H:/jar包/" overwrite="true">
+    <fileset dir="H:\程序\大三上期\使用迭代器遍历Collection集合元素\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+</target>
+</project>
